@@ -12,6 +12,7 @@ Document methodology and results in a clear, reproducible notebook.
 **Approach & Methodology**
 
 **Step 1 – Dataset Preparation**
+
 Collected 10+ Python code snippets covering loops, functions, recursion, and classes.
 Saved each snippet as a text block within the Colab notebook.
 

@@ -57,6 +57,7 @@ Visualizations created with matplotlib, seaborn, and plotly.
 Analyzed visual patterns:
 MiniLM → efficient but slightly coarse clusters.
 DistilRoBERTa → stronger contextual grouping.
+
 **Goal of This Milestone**
 
 This milestone lays the groundwork for:

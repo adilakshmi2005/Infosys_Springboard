@@ -17,6 +17,7 @@ Collected 10+ Python code snippets covering loops, functions, recursion, and cla
 Saved each snippet as a text block within the Colab notebook.
 
 **Step 2 – Code Parsing**
+
 Used Python’s built-in ast library to parse the code and extract:
 Function definitions
 Class declarations
@@ -25,10 +26,12 @@ Control-flow patterns
 This transforms raw code into a structured tree that represents code logic.
 
 **Step 3 – Tokenization**
+
 Tokenized each snippet using custom regex-based logic and nltk tools.
 Converted code into standardized tokens for feeding into transformer models.
 
 **Step 4 – Embedding Generation**
+
 Passed the processed tokens into pretrained transformer models:
 MiniLM-L6-v2
 DistilRoBERTa-base
@@ -36,11 +39,13 @@ MPNet-base-v2
 Extracted vector embeddings representing each code snippet’s semantic meaning.
 
 **Step 5 – Model Comparison**
+
 Calculated cosine similarity between embeddings of different snippets.
 Observed which models yield higher similarity for logically identical functions.
 Used PCA and t-SNE for dimensionality reduction.
 
 **Step 6 – Visualization**
+
 Plotted:
 Embedding clusters
 Similarity heatmaps
@@ -48,10 +53,12 @@ Model comparison graphs
 Visualizations created with matplotlib, seaborn, and plotly.
 
 **Step 7 – Interpretation**
+
 Analyzed visual patterns:
 MiniLM → efficient but slightly coarse clusters.
 DistilRoBERTa → stronger contextual grouping.
 **Goal of This Milestone**
+
 This milestone lays the groundwork for:
 Developing a code-to-text explanation system in Milestone 2.
 Enabling semantic search across codebases.

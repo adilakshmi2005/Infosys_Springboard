@@ -1,72 +1,79 @@
 # CodeGenie AI Explainer and Code Generator
-**Project Overview**
+# Milestone 1: Building the Code Explainer Pipeline
+# Overview
 
-The CodeGenie AI Explainer and Code Generator project aims to build an intelligent system that can read, interpret, and generate explanations for source code using Natural Language Processing (NLP) and deep-learning techniques.In this first milestone, we design and implement a Code Explainer pipeline that processes code, extracts meaningful structure, and compares how different transformer-based models interpret code semantics.This forms the foundation for upcoming milestones, which will focus on generating human-like explanations and summaries for code.
-**Objectives**
-Build a code-understanding pipeline using Python and NLP models.
-Parse Python code using Abstract Syntax Tree (AST) to extract structure.
-Generate embeddings using MiniLM, DistilRoBERTa, and MPNet.
-Compare embeddings to understand semantic differences between models.
-Visualize results through plots and clustering graphs.
-Document methodology and results in a clear, reproducible notebook.
-**Approach & Methodology**
+The CodeGenie AI Explainer and Code Generator is an innovative project under the Infosys Springboard Internship Program.
+It explores how Artificial Intelligence, particularly Natural Language Processing (NLP), can understand, explain, and represent code just like humans do.
 
-**Step 1 – Dataset Preparation**
+This milestone marks the foundation of an AI-powered code understanding system.
+We focused on designing a Code Explainer Pipeline that interprets source code through multiple NLP models, visualizes their understanding, and compares their semantic embeddings.
 
-Collected 10+ Python code snippets covering loops, functions, recursion, and classes.
-Saved each snippet as a text block within the Colab notebook.
+# Objective
 
-**Step 2 – Code Parsing**
+“To make machines understand code — not just execute it.”
+Milestone 1 focuses on:
+Parsing and tokenizing Python code using AST (Abstract Syntax Tree).
+Generating embeddings using pretrained NLP models:
+MiniLM
+DistilRoBERTa
+MPNet
+Comparing and visualizing model outputs.
+Building a reusable, modular code analysis pipeline.
 
-Used Python’s built-in ast library to parse the code and extract:
-Function definitions
-Class declarations
-Import statements
-Control-flow patterns
-This transforms raw code into a structured tree that represents code logic.
+# Why This Project Matters
 
-**Step 3 – Tokenization**
+Traditional compilers execute code, but they don’t understand it.
+In contrast, AI models like transformers can represent both syntax and semantics, enabling:
 
-Tokenized each snippet using custom regex-based logic and nltk tools.
-Converted code into standardized tokens for feeding into transformer models.
+Automated code summarization
+Bug detection and intent prediction
+Smart AI code assistants (like GitHub Copilot)
+This project lays the groundwork for the next generation of AI-driven code intelligence tools.
 
-**Step 4 – Embedding Generation**
+# Approach & Methodology
 
-Passed the processed tokens into pretrained transformer models:
-MiniLM-L6-v2
-DistilRoBERTa-base
-MPNet-base-v2
-Extracted vector embeddings representing each code snippet’s semantic meaning.
+Step 1: Code Preparation
 
-**Step 5 – Model Comparison**
+Collected 10 Python snippets representing various programming constructs:
+Loops, Recursion, OOP, Data Structures, Exception Handling, etc.
 
-Calculated cosine similarity between embeddings of different snippets.
-Observed which models yield higher similarity for logically identical functions.
-Used PCA and t-SNE for dimensionality reduction.
+Step 2: Code Parsing with AST
 
-**Step 6 – Visualization**
+Used Python’s ast module to break down each code snippet.
+Extracted functions, classes, imports, and control flow elements.
+Visualized the internal structure using tree diagrams.
 
-Plotted:
-Embedding clusters
-Similarity heatmaps
-Model comparison graphs
-Visualizations created with matplotlib, seaborn, and plotly.
+Step 3: Tokenization
 
-**Step 7 – Interpretation**
+Converted code into tokens using regex + nltk.
+Cleaned and standardized identifiers for fair comparison.
 
-Analyzed visual patterns:
-MiniLM → efficient but slightly coarse clusters.
-DistilRoBERTa → stronger contextual grouping.
+Step 4: Embedding Generation
 
-**Goal of This Milestone**
+Processed tokenized snippets through three sentence-transformer models:
 
-This milestone lays the groundwork for:
-Developing a code-to-text explanation system in Milestone 2.
-Enabling semantic search across codebases.
-Understanding how different transformer models perceive programming logic.
-By completing Milestone 1, we have successfully:
-Built a reproducible code-explainer pipeline.
-Understood model behaviour on structured text.
-Visualized and compared embeddings effectively.
+# Model	Description
+MiniLM	Lightweight and efficient
+DistilRoBERTa	Balanced performance
+MPNet	Deep semantic understanding
 
-MPNet → produced the most semantically coherent embeddings.
+Step 5: Model Comparison & Visualization
+
+Used cosine similarity, PCA, and t-SNE for visual comparisons.
+Created heatmaps and scatter plots to show how models interpret code similarity.
+
+# Tools & Technologies
+
+Category	Libraries
+Parsing	ast, inspect, tokenize
+Tokenization	nltk, re
+Embeddings	sentence-transformers
+Visualization	matplotlib, seaborn, plotly, PCA, t-SNE
+Environment	Google Colab
+Version Control	GitHub
+
+# Conclusion
+
+This milestone achieved its goal of building a functional, interpretable Code Explainer pipeline.
+Through parsing, embedding, and visualization, we’ve proven that transformer-based NLP models can understand source code meaningfully —
+laying a solid foundation for the next stage: AI-powered Code Generation and Explanation.

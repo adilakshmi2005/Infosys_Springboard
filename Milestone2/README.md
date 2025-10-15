@@ -145,5 +145,6 @@ Document insights and comparisons clearly for final submission
 This milestone demonstrates the successful integration of AI, software metrics, and interactive tools into a single intelligent system.
 By combining multiple models, code evaluation, and visualization, this project showcases how AI can assist developers in writing, analyzing, and improving code automatically.
 It highlights the potential of AI-driven software tools to make coding more efficient, intelligent, and maintainable.ission
+<img width="609" height="470" alt="image" src="https://github.com/user-attachments/assets/a8e3a92e-f0f2-47ad-ba6c-87193d2b1e4c" />
 
 

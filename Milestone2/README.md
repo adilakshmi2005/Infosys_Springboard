@@ -17,10 +17,12 @@ Ultimately, this milestone demonstrates how AI can assist in intelligent program
 # Models Utilized
 
 Three advanced transformer-based models were used for generating and analyzing Python code:
-Model	Parameters	Source	Characteristics
-DeepSeek-Coder-1.3B	1.3 Billion	deepseek-ai/deepseek-coder-1.3b-instruct	Lightweight, fast, and efficient for small tasks
-Phi-2 (2.7B)	2.7 Billion	microsoft/phi-2	Generates highly maintainable and concise code
-Gemma-2B-IT	2 Billion	google/gemma-2b-it	Balanced between code clarity and verbosity
+| Model                      | Parameters | Source                                     | Description                                                                                                                                                  |
+| -------------------------- | ---------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  **DeepSeek-Coder-1.3B** | 1.3B       | `deepseek-ai/deepseek-coder-1.3b-instruct` | A lightweight and efficient model built for **precise code understanding** and **logical structure generation**. Performs well on step-by-step coding tasks. |
+|  **Phi-2 (2.7B)**        | 2.7B       | `microsoft/phi-2`                          | Known for its **clarity and accuracy**, this Microsoft model produces **short, maintainable, and clean** Python code, ideal for real-world applications.     |
+|  **Gemma-2B-IT**         | 2B         | `google/gemma-2b-it`                       | A Google model fine-tuned for **instruction-based tasks**. It generates **balanced and readable** code, with excellent structure and descriptive comments.   |
+
 
 # Methodology and Workflow
 Step 1 — Environment Setup
@@ -115,6 +117,47 @@ Avg Complexity: 8.0 | Maintainability Index: 79.99 | Grade: A | LOC: 30
 | Visualization        | **Matplotlib**                             |
 | UI Development       | **ipywidgets**                             |
 | Platform             | **Google Colab (GPU Runtime)**             |
+
+# Visualization Results
+
+Visualizing model performance helps to easily compare their quality, readability, and structure.
+The following charts were generated using Matplotlib, based on the evaluated metrics (Maintainability Index, Code Complexity, and Lines of Code).
+
+# Maintainability Index Comparison
+
+This chart compares how readable and maintainable the generated code is for each model.
+Higher maintainability index = more readable and maintainable code.
+Phi-2 achieved the highest maintainability, showing excellent code structure.
+
+<img width="609" height="470" alt="image" src="https://github.com/user-attachments/assets/d01aac86-07ae-4fb3-8584-82ba1d3dfd09" />
+
+Observation:
+Phi-2 produced shorter, cleaner, and highly maintainable code (MI ≈ 94).
+DeepSeek and Gemma also achieved Grade A, showing good readability but slightly more verbosity.
+
+# Code Complexity Comparison
+
+This bar chart represents the cyclomatic complexity for each model’s generated code.
+Lower complexity = simpler and more efficient logic.
+Phi-2 and Gemma both maintained minimal complexity values (≈ 4), while DeepSeek had slightly higher complexity due to detailed branching.
+
+<img width="600" height="470" alt="image" src="https://github.com/user-attachments/assets/d4c25ac6-645d-4c41-a7d3-753cc1193a19" />
+
+Observation:
+All three models maintained good logical structures.
+DeepSeek’s longer algorithms increased its complexity, whereas Phi-2 generated more concise and optimized functions.
+
+# Lines of Code (LOC) Comparison
+
+This chart visualizes the number of lines of code each model generated for the same prompt.
+Fewer lines usually mean more concise code.
+Phi-2 had the least LOC, showing compactness and simplicity.
+
+<img width="600" height="470" alt="image" src="https://github.com/user-attachments/assets/db081f9c-b43a-4dec-b095-4a172324b203" />
+
+Observation:
+Phi-2 again led in efficiency with minimal LOC (~11),
+while DeepSeek and Gemma produced longer yet structurally rich code (~30 LOC).
 
 # Key Insights
 

@@ -72,6 +72,40 @@ Visualization	matplotlib, seaborn, plotly, PCA, t-SNE
 Environment	Google Colab
 Version Control	GitHub
 
+---
+
+# Model Visualizations and Insights
+
+# MiniLM – Cosine Similarity Matrix
+This heatmap shows the **pairwise cosine similarity** between the embeddings of different code snippets using the **MiniLM** model.
+
+<img width="523" height="457" alt="image" src="https://github.com/user-attachments/assets/66f8de4b-7d39-43b0-b1d5-f33cce049e3f" />
+
+# MiniLM – Embedding Visualization (PCA)
+A **PCA projection** showing how MiniLM clusters similar code snippets in embedding space.
+
+<img width="720" height="470" alt="image" src="https://github.com/user-attachments/assets/de6c5634-6a01-4a0f-a770-e9dcab70b3e3" />
+
+# DistilRoBERTa – Embedding Visualization
+DistilRoBERTa demonstrates stronger **semantic grouping**, clustering functionally similar snippets closer together.
+
+<img width="798" height="470" alt="image" src="https://github.com/user-attachments/assets/4d2c7e46-ff90-424f-93ca-91a7051ac51e" />
+
+# MPNet – Embedding Visualization
+MPNet shows **deeper semantic understanding**, with distinct clusters for structurally and logically related snippets.
+
+<img width="818" height="470" alt="image" src="https://github.com/user-attachments/assets/3cecc075-be4d-491a-9156-5739d3c060ea" />
+
+# Model Embedding Correlation Comparison
+This plot compares the **correlation between model embeddings**, showing how closely each model’s understanding aligns with others.
+
+<img width="536" height="393" alt="image" src="https://github.com/user-attachments/assets/0c37b97c-6372-412a-af7f-62c45997d30b" />
+
+# Clustering Similarity Between Models
+A combined visualization comparing **clustering patterns** across all three models — MiniLM, DistilRoBERTa, and MPNet — indicating how similar their semantic grouping is.
+
+<img width="536" height="393" alt="image" src="https://github.com/user-attachments/assets/85da3292-e769-4f09-b2ab-84d439b91014" />
+
 # Conclusion
 
 This milestone achieved its goal of building a functional, interpretable Code Explainer pipeline.
